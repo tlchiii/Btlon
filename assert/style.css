@@ -137,11 +137,26 @@
     .col-md-0{
         display: none;
     }
+    .col-md-12{
+        margin-bottom: 8px;
+    }
 }
 
 /* mobile */
 @media only screen and (max-width: 739px) {
     .col-sm-0{
         display: none;
+    }
+    .list-item .place-item{
+        flex:0 0 45%;
+    }
+    .list_header{
+        flex:0 0 32%;
+    }
+    .col-sm-12{
+        margin-bottom: 5px;
+    }
+    .row>*{
+        padding-right: 0 !important;
     }
 }
