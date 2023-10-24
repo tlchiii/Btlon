@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header gio hang */
+
+.header{
+    
+}
+
+.list_header .shopping{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+.shopping span{
+    /* background-color: red;
+    border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    position: absolute;
+    top:-5px;
+    left: 70%;
+}
+
+#header_cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background-color: #eee;
+    height: 100vh;
+    transition: 0.5s;
+}
+#header_cart h1{
+    color: rgb(232, 161, 62) ;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+#header_cart table{
+    width: 100%;
+}
+#header_cart thead tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#header_cart tbody tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+}
+#header_cart tbody .image{
+    width: 60%;
+}
+tbody .image img{
+    width: 20%;
+}
+tbody .image .item-name{
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+}
+#header_cart td input{
+    width: 30px;
+    outline: none;
+}
+#header_cart tbody .chon{
+    cursor: pointer;
+}
+
+
+/* cart */
+#header_cart .checkout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+#header_cart .checkout div{
+   background-color:rgb(232, 161, 62) ;
+   height: 70px;
+   width: 50%;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   cursor: pointer;
+   
+}
+#header_cart .checkout div:nth-child(2){
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* end gio hang */
+.top-cartegory{
+    color: #757575;
+    padding: 12px 25px;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+.cartegory .top-cartegory a{
+    text-decoration: none;
+    /* font-size:15px; */
+    color: #000 !important;
+    opacity: 0.8;
+}
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 35px;
+    background-color: #eee;
+}
+/* danh muc */
+.list_menu{
+    flex:1;
+    background-color: #fff;
+    border-right:1px solid #eee;
+    margin-right: 4px;
+}
+.list_menu_s{
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+}
+.list_menu ul.list_menu{
+    list-style: none;
+}
+.list_menu .list_menu_s{
+ padding: 10px 0;
+}
+
+.list_menu .list-icon{
+    font-size: 15px;
+}
+/* navbar */
+.item-container .subnav{
+    flex:1;
+    background-color: #fff;
+    border-right:1px solid #eee;
+
+}
+
+/* .item-container .subnav a{
+    text-decoration: none;
+    color: #000 ;
+    display:block;
+    font-size: 20px;
+    padding: 5px 0;
+    padding-left: 8px;
+} */
+/* end-navbar */
+.item-container .content{
+    flex: 5;
+    background-color: #fff;
+    padding: 0 5px;
+}
+.content .header-item h2{
+    color: #000;
+    font-size: 30px;
+}
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.list-item .place-item{
+    flex:0 0 24%;
+    margin: 8px 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+.list-item .place-item:hover{
+    border: 2px solid dodgerblue;
+}
+
+.item-img{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.list-item .item-body{
+ padding: 15px;
+ font-size: 15px !important;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.item-body .item-name{
+    height: 40px;
+    font-size: 14px;
+    font-weight:500;
+    color: #000; 
+    overflow: hidden;
+    text-transform: uppercase;
+} 
+.item-body .item-price{
+    margin-top: 15px;
+}
+.place-item .item-buy{
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid dodgerblue;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 2%;
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.place-item .item-buy:hover{
+    background-color: dodgerblue;
+}
+.place-item .item-buyicon{
+   font-size: 30px !important;
+   color: dodgerblue;
+   
+}
+.place-item .item-buy:hover i{
+    color: #fff;
+}

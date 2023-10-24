@@ -1,0 +1,199 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.row-header{
+    background-color: rgb(6, 74, 169);
+    margin-right: 0px !important;
+    
+}
+
+/*header*/
+#row1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*logo*/
+.title_logo{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+/*thanh tìm kiếm*/
+.search{
+    border: 1px solid rgb(4, 47, 108);
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    border-radius: 75px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.input {
+    border: none;
+    height: 38.5px;
+    border-top-left-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+    background-color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+        /* transition: width 0.3s ease; */
+}
+    
+.input::placeholder {
+    color: gray;
+}
+    
+.search.active .input {
+    width: 400px;
+}
+.button_search {
+    height: 38.5px;
+    padding: 5px 5px;
+    border-top-right-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    background: rgb(232, 161, 62);
+    /* transition: transform 0.3s ease; */
+}
+.button_search:hover{
+    background-color: gray;
+}   
+/* .search.active .button_search {
+    transform: translateX(300px);
+} */
+
+/*icon*/
+.fa-solid {
+    color: #ffffff;
+}
+
+/*bên phải thanh tìm kiếm*/
+.list_header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.icon {
+    border-radius: 50%;
+    background-color: rgb(232, 161, 62);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.text_header{
+    /* float: right; */
+    font-size: 12px;
+    color: white; 
+    text-align: center;
+}
+.text_header p,a{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+
+
+/*liên kết*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text_header a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+#ls:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/*footer*/
+.row3{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+h2{
+    color: rgb(232, 161, 62);
+    padding-bottom: 40px;
+}
+.title_logo_footer{
+    margin-top: -30px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+/*tên trang web cạnh logo*/
+.title_logo{
+    padding-bottom: 0px;
+}
+footer{
+    margin-top: 500px;
+}
+
+
+
+/*main*/
+.container{
+    text-align: center;
+}
+
+.row2{
+    background-color: white;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/*Nút quay lại trang*/
+#btn_bt i{
+    color: dodgerblue;
+    font-size: 3.5em;
+    right: 25px;
+    position: fixed;
+    bottom: 40px;
+    display: none;
+}
+#btn_bt a i:hover{
+    color: rgb(240, 177, 104);
+}
+#btn_bt a{
+    display: block;
+}
+
+
+/*màu chữ hot*/
+@keyframes ex{
+    from{
+        color: rgb(210, 172, 101);
+    }
+    to{
+        color: red;
+    }
+}
+
+/*chuyển động của chữ hot*/
+.hot{
+    animation-name: ex;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0px;
+}

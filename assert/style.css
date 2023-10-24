@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-content{
+    background-color: #eee; 
+    padding: 10px 30px;
+}
+.item-slide {
+    margin: 0 -10px;
+}
+.item-slide img{
+    width: 100%;
+}
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+/* danh muc */
+.list_menu{
+    display: block;
+    flex:1;
+    background-color: #fff;
+    border-right:1px solid #eee;
+    margin-right: 4px;
+}
+.list_menu_s{
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+}
+.list_menu ul.list_menu{
+    list-style: none;
+}
+.list_menu .list_menu_s{
+ padding: 10px 0;
+}
+
+.list_menu .list-icon{
+    font-size: 15px;
+}
+
+/* .item-container .subnav a{
+    text-decoration: none;
+    color: #000 ;
+    display:block;
+    font-size: 20px;
+    padding: 5px 0;
+    padding-left: 8px;
+} */
+/* end-navbar */
+.item-container .content{
+    flex: 5;
+    background-color: #fff;
+    padding: 0 5px;
+}
+.content .header-item h2{
+    color: #000;
+    font-size: 30px;
+}
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 0 2px !important;
+}
+.list-item .place-item{
+    flex:0 0 24%;
+    margin: 8px 0;
+    padding: 0 !important;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.list-item .place-item:hover{
+    border: 2px solid dodgerblue;
+}
+
+.item-img{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.list-item .item-body{
+ padding: 15px;
+ font-size: 15px !important;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.item-body .item-name{
+    height: 40px;
+    font-size: 15px;
+    font-weight:500;
+    color: #000; 
+    overflow: hidden;
+    text-transform: uppercase;
+} 
+.item-body .item-price{
+    margin-top: 15px;
+}
+.item-body .item-buy{
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid dodgerblue;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 2%;
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item-body .item-buy:hover{
+    background-color: dodgerblue;
+}
+.item-body .item-buyicon{
+   font-size: 30px !important;
+   color: dodgerblue;
+   
+}
+.item-body .item-buy:hover i{
+    color: #fff;
+}
+/* ipad */
+.col-md-0,.col-sm-0{
+    display: block;
+}
+
+
+
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    .col-md-0{
+        display: none;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 739px) {
+    .col-sm-0{
+        display: none;
+    }
+}

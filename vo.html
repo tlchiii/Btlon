@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vở</title>
+    <link rel="stylesheet" href="./assert/style.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <!-- trang chu -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="/assert/img/trang_chu/logo.png" type="image" style="width: 100%;">
+    <title> Stationery </title>
+    <link rel="stylesheet" href="./assert/trang_chu.css">
+    <link rel="stylesheet" href="trang_chu.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+<div class="header">
+    <header class="row-header sticky-top" id="myHeader">
+        <div id="row1" class="row">
+            <div class="col-sm-12 col-md-1 col-lg-2 ">
+                
+                <h2 style="color: white;" class="title_logo"><a href="trang_chu.html"><img src="./assert/img/trang_chu/logo.png" alt="logo" width="75px" height="75px" ><b id="title_lg"> STATIONERY</b></a></h2>
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-5">
+                <div class="search">
+                    <input class="input" type="search" id="kw" placeholder="Tìm kiếm sản phẩm ... " style="font-weight: 100px;">
+                    <button class="button_search" type="submit" onclick="search()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-1 list_header">
+                <div class="icon">
+                    <i class="fa-solid fa-house "></i>
+                </div>
+                <div class="text_header">
+                    <a href="trang_chu.html" id="text1">Trang chủ</a>
+                </div>
+
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-1 list_header">
+                <div class="icon">
+                    <i class="fa-solid fa-user "></i>
+                </div>
+                <div class="text_header">
+                    <a href="../dang_nhap/dang_nhap.html" id="text2">Đăng nhập</a>
+                </div>
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-1 list_header">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                </div>
+                <div class="text_header">
+                    <a href="gio_hang.html" id="text3">Giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+    <!-- end header -->
+<div class="body-content">
+    <section class="item-slide ">
+    <img src="./assert/img/Vo/vo-banner.webp" alt="">
+    </section>
+
+    <section class="item-container row">
+        <!-- danh muc -->
+        <div class="list_menu col-md-0 col-sm-0">
+            <ul class="listmenu_ul">
+                <li class="list_menu_s">
+                    <div><i class="fa-solid fa-pen list-icon" style="color: red;"></i></div>
+                    <div><a href=""></a>Bút</div>
+                    <p class="hot">Hot !!!</p>
+                </li>
+                <li class="list_menu_s">
+                    <div><i class="fa-solid fa-eraser list-icon" style="color: #1c8a14;"></i></div>
+                    <div> <a href=""></a>Tẩy</div>
+                </li>
+                <li class="list_menu_s">
+                    <div><i class="fa-solid fa-book list-icon" style="color: #ab5c12;"></i></div>
+                    <div><a href=""></a>Vở</div>
+                    <p class="hot">Hot !!!</p>
+                </li>
+                <li class="list_menu_s">
+                    <div><i class="fa-solid fa-ruler " style="color: #0c3683;"></i></div>
+                    <div><a href=""></a>Thước</div>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="content col-md-12 col-sm-12">
+            <div class="header-item col-sm-12">
+                <h2>Vở</h2>
+                <p>Sắp xếp:
+                    <select class="price-sort" name="" id="select-price">
+                        <option value="0">Lọc theo</option>
+                        <option value="">Giá tăng dần</option>
+                        <option value="">Giá giảm dần</option>
+                    </select>
+                </p>
+                
+            </div>
+            <hr>
+            <!-- hang 1 -->
+            <div class="list-item row">
+                  <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/campus.jpg" alt="" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Vở kẻ ngang Campus</h4>
+                          <p class="item-price">7,000₫</p>
+                          <button class="item-buy">
+                            <i class=" ti-shopping-cart-full item-buyicon"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/deli.jpg" alt="Bút Bi Thiên Long TL-093" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Vở kẻ ngang 80 trang Mc.ple bốn mùa</h4>
+                          <p class="item-price">6,200₫
+                          </p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/haitien.jpg" alt="Bút Bi Thiên Long TL-027" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Vở kẻ ngang sáng tạo Hải Tiến</h4>
+                          <p class="item-price">5,900₫</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/lotso.jpg" alt="Bút Bi Thiên Long TL-079" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Combo 5 quyển vở họa tiết gấu cute</h4>
+                          <p class="item-price">30,000₫</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+              <!-- hang 2 -->
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/subaru.jpg" alt="Bút chì gỗ Thiên Long GP-018" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Tập học sinh giấy dày 4 ô ly</h4>
+                          <p class="item-price">7,500đ</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/vo Hai tien.jpg" alt="Bút chì gỗ 2B Thiên Long GP-027" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Hải Tiến Vở kẻ ngang Sáng tạo(72tr, 80tr) </h4>
+                          <p class="item-price">8,000₫</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/vo Klong.jpg" alt="Ruột bút bi" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">Sổ may dán gáy A4 200 trang KLONG</h4>
+                          <p class="item-price">24,000₫</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+                <div class="place-item col-sm-6">
+                      <img src="./assert/img/Vo/vo linote.jpg" alt="" class="item-img">
+                      <div class="item-body">
+                          <h4 class="item-name">LINOTE vở kẻ ngang 80 trang travel</h4>
+                          <p class="item-price">5,900₫</p>
+                          <button class="item-buy">
+                              <i class=" ti-shopping-cart-full item-buyicon"></i>
+                            </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </section>
+</div>
+
+<!-- end body -->
+</body>
+<!-- footer -->
+<footer class="row row3 row-header">
+    <div class="col-md-12 col-lg-4">
+        <h2 class="title_logo_footer" style="margin-bottom: 0px;"><img src="./assert/img/trang_chu/logo.png" alt="logo" style="height: 100px; width: 100px;"><b>STATIONERY</b></h2>                
+        <h2 class="title_logo">Stationary - một trang web về văn phòng phẩm.</h3>
+    </div>
+    <div class="col-md-12 col-lg-4">
+        <h2 class="title_logo">Địa chỉ liên hệ</h2>
+        <p style="margin-top: 20px;">Kí túc xá Đại học Giao thông vận tải Hà Nội.</p>
+        <p>99 Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội.</p>
+    </div>
+    <div class="col-md-12 col-lg-4">
+        <h2 class="title_logo">Hỗ trợ khách hàng</h2>
+        <p style="margin-top: 20px;">
+            - SĐT: 1900 XXXX
+            <br>
+            - Email: abc@gmail.com
+        </p>
+    </div>
+</footer>
+</html>
