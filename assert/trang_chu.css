@@ -112,7 +112,7 @@ a{
 
 .text_header a:hover{
     color: dodgerblue;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #ls:hover{
