@@ -33,6 +33,11 @@
     display: grid;
     grid-template-columns: 15% 50% 35%;
 }
+.list_menu_s a{
+    color: #212529 !important;
+    cursor: pointer;
+    font-weight: 400;
+}
 .list_menu ul.list_menu{
     list-style: none;
 }
@@ -132,7 +137,7 @@
 }
 
 
-
+/* ipad */
 @media only screen and (min-width: 740px) and (max-width: 1023px){
     .col-md-0{
         display: none;
